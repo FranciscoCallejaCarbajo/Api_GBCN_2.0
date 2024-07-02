@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fin Fuentes -->
+    <!-- Css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/carrusel.css">
+    <!-- Fin Css -->
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/d91e44ae42.js" crossorigin="anonymous"></script>
+    <!-- fin fontawesome -->
+    <title>Gaming Barcelona Esports Club</title>
+  </head>
+  <body>
+    <div id="header">
+      <nav>
+        <a href="/html/index.html">
+          <img src="/img/LOGO_GBCN.png" alt="LogoGbcn" class="imglogo" />
+        </a>
+        <ul id="menuDesplegable">
+          <li><a href="#inicio">Inici</a></li>
+          <li><a href="#productos">Productes</a></li>
+          <li><a href="#competiciones">Equips</a></li>
+          <li><a href="#eventos">Esdeveniments</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="contenedor">
+        <div class="titulo">
+          <img src="/img/GBCN_G_azul.png" alt="GBCN_G_azul" class="imgTitulo" />
+        </div>
+        <div class="tituloTxt">
+          <h1>Benvinguts a Gaming Barcelona E-Sports Club</h1>
+        </div>
+        <div class="btn-home">
+          <a href="nosotros.html" class="btn">Sobre nosaltres</a>
+        </div>
+      </div>
+    </div>
+    <!-- pruebas de carrusel -->
+    <div id="productos">
+      <h1>PRODUCTES</h1>
+    </div>
+    <main>
+      <div class="hero-left">
+        <div class="layers">
+          <div class="layer layer-displayed" data-scene="1">
+            <span>SAMARRETA</span>
+            <div class="layer__image" style="background-image: url('/img/Camiseta_gbcn.png')"></div>
+          </div>
+          <div class="layer" data-scene="2">
+            <span>MÀNIGA</span>
+            <div class="layer__image" style="background-image: url('/img/Manguitos_sinfondo.png')"></div>
+            <div class="layer__info">
+            </div>
+          </div>
+          <div class="layer" data-scene="3">
+            <span>CLAUERS</span>
+            <div class="layer__image" style="background-image: url('/img/llavero_sinfondo.png')"></div>
+            <div class="layer__info">
+            </div>
+          </div>
+        </div>
+        <button onclick="switchLayer(2)"><</button>
+        <button onclick="switchLayer()">></button>
+      </div>
+      <div class="hero-right">
+        <div class="layer layer-displayed" data-scene="1"></div>
+        <div class="layer" data-scene="2"></div>
+        <div class="layer" data-scene="3"></div>
+        <div class="photo-frame">
+          <div class="layer layer-displayed" style="background-image: url('/img/image_camiseta.png')" data-scene="1"></div>
+          <div class="layer" style="background-image: url('https://images.unsplash.com/photo-1536099876051-79f4cbffeed1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=451b9215ee8acc20d5d7ea354aab570e&auto=format&fit=crop&w=1350&q=80')" data-scene="2"></div>
+          <div class="layer" style="background-image: url('https://images.unsplash.com/photo-1512821062947-6eda5253c3e2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=305dedf0e09581de0ee68ab2c9523955&auto=format&fit=crop&w=1351&q=80')" data-scene="3"></div>
+          <div class="cover"></div>
+        </div>
+        <div class="photo-name">
+          <div class="photo-name__wrapper">
+            <div class="layer layer-displayed" data-scene="1">
+              <span class="photo-name__title">SAMARRETA</span>
+              <span>GAMING E-CLUB BARCELONA</span>
+            </div>
+            <div class="layer" data-scene="2">
+              <span class="photo-name__title">AUSTIN SMITH</span>
+              <span>RIDING THE POW</span>
+            </div>
+            <div class="layer" data-scene="3 ">
+              <span class="photo-name__title">SALLY BLUE</span>
+              <span>RIDING THE SPLASH</span>
+            </div>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="layer layer-displayed" style="background-image: url('/img/cod2.jpg')" data-scene="1"></div>
+          <div class="layer" style="background-image: url('https://images.unsplash.com/photo-1522056615691-da7b8106c665?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4f51ed1121800f23da98176659ba7506&auto=format&fit=crop&w=1352&q=80')" data-scene="2"></div>
+          <div class="layer" style="background-image: url('https://images.unsplash.com/photo-1478700485868-972b69dc3fc4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=918195bdc5a37a2f412cf49234183427&auto=format&fit=crop&w=1350&q=80')" data-scene="3"></div>
+          <div class="cover"></div>
+        </div>
+      </div>
+    </main>
+
+
+    <script src="/js/carrusel.js"></script>
+    <script src="/js/menuDesplegable.js"></script>
+  </body>
+</html>

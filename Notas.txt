@@ -1,0 +1,29 @@
+En la parte de los productos falta:
+
+- Organizar bien el titulo "productos"
+- Ajustar bien la parte izquieda del carrusel
+- Cambiar y pedir las fotos para que se vea bien
+
+luego en responsive:
+En 2560px 
+- orgnizar la parte izquierda (Orgnizar las fotos que se ajusten mejor)
+-  De nuevo el titulo
+- De nuevo la parte izquierda quizas sea un poco de padding
+
+En 1440px
+- Orgizar el titulo "productos" (quizas organizandolo en la primera parte aqui se organice, no lo se hay que probar)
+- De nuevo la parte izquierda quizas sea un poco de padding
+
+En 768px
+- De nuevo el titulo "productos"
+- Orgnaizar el texto de las fotos de la derecha
+
+En 425px
+- De nuevo el titulo "productos"
+- Organizar el texto de las fotos de la derecha
+
+En 320px
+- De nuevo el titulo "productos"
+- Hacer un poco mas pequeño los botones de navegar |<|  |>|
+- Organizar el texto de las fotos de la derecha
+- Mirarme un poco el ancho y alto de la fotos de la derecha
